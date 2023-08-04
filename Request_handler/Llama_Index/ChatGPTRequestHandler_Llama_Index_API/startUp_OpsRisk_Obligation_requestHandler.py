@@ -18,7 +18,7 @@ def initProperties():
     logStep(logcontent)
     global openapi_key,tibco_error_code_dir,hostname,port
     prop = configparser.ConfigParser()
-    prop.read('EnvironmentHealer_props.ini')
+    prop.read('Ops_Risk_Obligation.ini')
     openapi_key = prop['OPENAI']['api_key']
     openai.api_key = openapi_key
 
@@ -61,7 +61,7 @@ if __name__ =='__main__':
     storage_context = StorageContext.from_defaults(persist_dir=tibco_error_code_dir)
     index = load_index_from_storage(storage_context)
     query_engine = index.as_query_engine()
-    logcontent = str(datetime.now()) + '[INFO] Hosting Environment Healer API'
+    logcontent = str(datetime.now()) + '[INFO] Hosting Ops Risk Obligation API'
     logStep(logcontent)
 
     app.run(hostname, port =port )

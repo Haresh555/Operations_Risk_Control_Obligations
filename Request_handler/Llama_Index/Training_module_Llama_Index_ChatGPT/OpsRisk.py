@@ -10,8 +10,8 @@ import time
 
 from llama_index import StorageContext, load_index_from_storage
 
-os.environ["OPENAI_API_KEY"] = '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'
-openai.api_key = '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'
+os.environ["OPENAI_API_KEY"] = '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'
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 
 def construct_index(directory_path):
