@@ -1,0 +1,9 @@
+[OPENAI]
+api_key = <<OPen ai key>>
+
+
+[FILESHARE]
+tibco_error_code_dir = C:/Haresh/MLProjects/ANZ Hackathon/GenAI/Environmental Healing/Llama_Index/ChatGPTRequestHandler_Llama_Index_API/TIBCO_ORA_SYS_DESIGN_ERROR_CODES
+[CONNECTIONS]
+hostname = localhost
+port = 5000

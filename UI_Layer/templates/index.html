@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Environment Healing</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <div class="chat-logo">
+        
+        <img src="{{ url_for('static', filename='assets/anz-logo.png') }}" alt="Chatbot Logo">
+      </div>
+      <div class="chat-info">
+        <h2>Advisor</h2>
+        <p class="description">The Advisor Chatbot is a smart virtual assistant designed to provide efficient and targeted solutions for resolving issues in any environment. With its AI-powered expertise, it offers quick and actionable suggestions, ensuring seamless problem-solving and enhanced productivity.</p>
+      </div>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      
+    </div>
+    <div class="chat-input">
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Type your message here">
+            <button type="submit" id="send-btn">Send</button>
+        </form>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
